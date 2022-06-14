@@ -174,12 +174,12 @@
             <h2 class="section-title">Contato</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Nome" class="contact__input">
-                    <input type="mail" placeholder="E-mail" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                    <input type="button" value="Enviar" class="contact__buttom button">
+                <form action="https://formsubmit.co/caionunesdemoura@gmail.com" method="POST" class="contact__form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="nome" placeholder="Nome" class="contact__input" required>
+                    <input type="email" name="email" placeholder="E-mail" class="contact__input" required>
+                    <textarea name="mensagem" id="" cols="0" rows="10" class="contact__input" placeholder="Escreva aqui, a sua mensagem..." required></textarea>
+                    <button type="submit" class="contact__buttom button">Enviar</button>
                 </form>
             </div>
         </section>
